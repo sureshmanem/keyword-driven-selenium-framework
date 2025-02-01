@@ -5,7 +5,8 @@
 		<classes>
 			<class name="testscripts.SeleniumPracticeScenario">
 				<methods>
-					<include name="seleniumPracticeTest"></include>
+					<!-- <include name="seleniumPracticeTest"></include> -->
+					<include name="MyWebSiteTest"></include>
 				</methods>
 			</class>
 		</classes>

@@ -34,5 +34,14 @@ public class SeleniumPracticeScenario extends TestConfigurations {
 		tearDownTestRunner(testParameters, driverScript);
 	}
 
+	@Test(dataProvider = "Chrome", dataProviderClass = TestConfigurations.class)
+	public void MyWebSiteTest(SeleniumTestParameters testParameters) {
 
+		testParameters.setCurrentTestDescription("Test for My Website");
+
+		DriverScript driverScript = new DriverScript(testParameters);
+		driverScript.driveTestExecution();
+
+		tearDownTestRunner(testParameters, driverScript);
+	}
 }

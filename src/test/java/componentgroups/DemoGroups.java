@@ -13,32 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package businesscomponents;
+package componentgroups;
 
 import com.cognizant.core.DriverScript;
 import com.cognizant.core.ReusableLibrary;
 import com.cognizant.core.ScriptHelper;
-import com.cognizant.framework.Status;
 
-public class SeleniumPracticeComponents extends ReusableLibrary {
+
+/**
+ * Class for storing component groups related to the flight reservation functionality
+ * @author Cognizant
+ */
+public class DemoGroups extends ReusableLibrary {
 	/**
-	 * Constructor to initialize the component library
-	 * 
-	 * @param scriptHelper The {@link ScriptHelper} object passed from the
-	 *                     {@link DriverScript}
+	 * Constructor to initialize the component group library
+	 * @param scriptHelper The {@link ScriptHelper} object passed from the {@link DriverScript}
 	 */
-	public SeleniumPracticeComponents(ScriptHelper scriptHelper) {
+	public DemoGroups(ScriptHelper scriptHelper) {
 		super(scriptHelper);
 	}
-
-	public void launchSeleniumUrl() throws InterruptedException {
-
-		// Sample code to launch URL in the browser
-		driver.get("http://www.seleniumframework.com/Practiceform/");
-		report.updateTestLog("Launch URL", "URL launched successfully", Status.PASS);
-
-		Thread.sleep(5000);
 	
+	public void findAndBookFlights() {
+		// System.out.println("Sample Group Name");
 	}
-
 }

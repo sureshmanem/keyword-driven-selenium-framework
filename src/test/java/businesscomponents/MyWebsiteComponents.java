@@ -20,25 +20,27 @@ import com.cognizant.core.ReusableLibrary;
 import com.cognizant.core.ScriptHelper;
 import com.cognizant.framework.Status;
 
-public class SeleniumPracticeComponents extends ReusableLibrary {
+public class MyWebsiteComponents extends ReusableLibrary {
 	/**
 	 * Constructor to initialize the component library
 	 * 
 	 * @param scriptHelper The {@link ScriptHelper} object passed from the
 	 *                     {@link DriverScript}
 	 */
-	public SeleniumPracticeComponents(ScriptHelper scriptHelper) {
+	public MyWebsiteComponents(ScriptHelper scriptHelper) {
 		super(scriptHelper);
 	}
 
-	public void launchSeleniumUrl() throws InterruptedException {
+	public void myWebsiteUrl() throws InterruptedException {
 
 		// Sample code to launch URL in the browser
-		driver.get("http://www.seleniumframework.com/Practiceform/");
-		report.updateTestLog("Launch URL", "URL launched successfully", Status.PASS);
+		driver.get("https://www.sureshmanem.com");
+		report.updateTestLog("Launch URL", "URL launched successfully", Status.PASS);	
 
 		Thread.sleep(5000);
-	
+
+		driver.close();
+		driver.quit();
 	}
 
 }
