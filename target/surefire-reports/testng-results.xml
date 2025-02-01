@@ -2,38 +2,38 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-01T20:46:53 IST" name="Sanity" finished-at="2025-02-01T20:47:01 IST" duration-ms="8130">
+  <suite started-at="2025-02-01T20:57:12 IST" name="Sanity" finished-at="2025-02-01T20:57:21 IST" duration-ms="8361">
     <groups>
     </groups>
-    <test started-at="2025-02-01T20:46:53 IST" name="Test for Demo Application" finished-at="2025-02-01T20:47:01 IST" duration-ms="8130">
+    <test started-at="2025-02-01T20:57:12 IST" name="Test for Demo Application" finished-at="2025-02-01T20:57:21 IST" duration-ms="8361">
       <class name="testscripts.SeleniumPracticeScenario">
-        <test-method is-config="true" signature="setUpTestSuite(org.testng.ITestContext)[pri:0, instance:testscripts.SeleniumPracticeScenario@291b4bf5]" started-at="2025-02-01T20:46:53 IST" name="setUpTestSuite" finished-at="2025-02-01T20:46:53 IST" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="setUpTestSuite(org.testng.ITestContext)[pri:0, instance:testscripts.SeleniumPracticeScenario@291b4bf5]" started-at="2025-02-01T20:57:12 IST" name="setUpTestSuite" finished-at="2025-02-01T20:57:12 IST" duration-ms="50" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7a799159]]>
+                <![CDATA[org.testng.TestRunner@5f14a673]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTestSuite -->
-        <test-method signature="MyWebSiteTest(com.cognizant.framework.selenium.SeleniumTestParameters)[pri:0, instance:testscripts.SeleniumPracticeScenario@291b4bf5]" started-at="2025-02-01T20:46:53 IST" name="MyWebSiteTest" data-provider="Chrome" finished-at="2025-02-01T20:47:01 IST" duration-ms="8122" status="PASS">
+        <test-method is-config="true" signature="setUpTestRunner()[pri:0, instance:testscripts.SeleniumPracticeScenario@291b4bf5]" started-at="2025-02-01T20:57:12 IST" name="setUpTestRunner" finished-at="2025-02-01T20:57:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTestRunner -->
+        <test-method signature="MyWebSiteTest(com.cognizant.framework.selenium.SeleniumTestParameters)[pri:0, instance:testscripts.SeleniumPracticeScenario@291b4bf5]" started-at="2025-02-01T20:57:12 IST" name="MyWebSiteTest" data-provider="Chrome" finished-at="2025-02-01T20:57:21 IST" duration-ms="8350" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.cognizant.framework.selenium.SeleniumTestParameters@25641d39]]>
+                <![CDATA[com.cognizant.framework.selenium.SeleniumTestParameters@4a883b15]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MyWebSiteTest -->
-        <test-method is-config="true" signature="setUpTestRunner()[pri:0, instance:testscripts.SeleniumPracticeScenario@291b4bf5]" started-at="2025-02-01T20:46:53 IST" name="setUpTestRunner" finished-at="2025-02-01T20:46:53 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTestRunner -->
-        <test-method is-config="true" signature="tearDownTestSuite()[pri:0, instance:testscripts.SeleniumPracticeScenario@291b4bf5]" started-at="2025-02-01T20:47:01 IST" name="tearDownTestSuite" finished-at="2025-02-01T20:47:01 IST" duration-ms="180" status="PASS">
+        <test-method is-config="true" signature="tearDownTestSuite()[pri:0, instance:testscripts.SeleniumPracticeScenario@291b4bf5]" started-at="2025-02-01T20:57:21 IST" name="tearDownTestSuite" finished-at="2025-02-01T20:57:21 IST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTestSuite -->
