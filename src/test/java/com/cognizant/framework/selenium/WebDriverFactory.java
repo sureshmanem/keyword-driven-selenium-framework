@@ -15,10 +15,8 @@
  */
 package com.cognizant.framework.selenium;
 
-import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -65,25 +63,10 @@ public class WebDriverFactory {
 	public static WebDriver getWebDriver(Browser browser) {
 		WebDriver driver = null;
 		properties = Settings.getInstance();
-		ChromeOptions chromeOptions = new ChromeOptions();
-
-		String SystemName = null;
-		try{
-			SystemName = InetAddress.getLocalHost().getHostName();
-			System.out.println("System Name: "+SystemName);
-		}catch (UnknownHostException e) {
-			e.printStackTrace();
-		}
-
 		switch (browser) {
 		case CHROME:
 			// Takes the system proxy settings automatically
-			if(SystemName.equalsIgnoreCase("DESKTOP-2QK1V2J")) {
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Downloads\\chromedriver_win32\\chromedriver.exe");
-			}else {
-				WebDriverManager.chromedriver().setup();
-			}
-			chromeOptions.addArguments("--incognito");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			break;
 
