@@ -63,17 +63,22 @@ public class WebDriverFactory {
 	public static WebDriver getWebDriver(Browser browser) {
 		WebDriver driver = null;
 		properties = Settings.getInstance();
+		ChromeOptions chromeOptions = new ChromeOptions();
+
 		switch (browser) {
 		case CHROME:
 			// Takes the system proxy settings automatically
-			WebDriverManager.chromedriver().setup();
+			// WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+			chromeOptions.addArguments("--incognito");
 			driver = new ChromeDriver();
 			break;
 
 		case CHROME_HEADLESS:
 
-			WebDriverManager.chromedriver().setup();
-			ChromeOptions chromeOptions = new ChromeOptions();
+			// WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+			
 			chromeOptions.addArguments("--headless");
 			driver = new ChromeDriver(chromeOptions);
 			break;
