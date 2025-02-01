@@ -27,8 +27,18 @@ import com.cognizant.framework.selenium.ToolName;
 
 public class TestConfigurations extends KeywordTestCase {
 
-	@DataProvider(name = "ChromeHeadless")
+	@DataProvider(name = "Chrome")
 	public Object[][] desktopBrowsers(Method currentMethod) {
+		currentScenario = currentMethod.getDeclaringClass().getSimpleName();
+		currentTestcase = currentMethod.getName();
+		currentTestcase = currentTestcase.substring(0, 1).toUpperCase().concat(currentTestcase.substring(1));
+
+		return new Object[][] { { new SeleniumParametersBuilders(currentScenario, currentTestcase)
+				.testInstance("Instance1").executionMode(ExecutionMode.LOCAL).browser(Browser.CHROME).build() } };
+	}
+
+	@DataProvider(name = "ChromeHeadless")
+	public Object[][] desktopBrowsersHeadless(Method currentMethod) {
 		currentScenario = currentMethod.getDeclaringClass().getSimpleName();
 		currentTestcase = currentMethod.getName();
 		currentTestcase = currentTestcase.substring(0, 1).toUpperCase().concat(currentTestcase.substring(1));

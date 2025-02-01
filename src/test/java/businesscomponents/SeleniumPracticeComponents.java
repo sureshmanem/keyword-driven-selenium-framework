@@ -15,10 +15,16 @@
  */
 package businesscomponents;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
 import com.cognizant.core.DriverScript;
 import com.cognizant.core.ReusableLibrary;
 import com.cognizant.core.ScriptHelper;
 import com.cognizant.framework.Status;
+
+import pages.SeleniumPracticePage;
 
 public class SeleniumPracticeComponents extends ReusableLibrary {
 	/**
@@ -33,8 +39,15 @@ public class SeleniumPracticeComponents extends ReusableLibrary {
 
 	public void launchSeleniumUrl() {
 
-		driver.get("https://www.techlistic.com/p/selenium-practice-form.html");
-		report.updateTestLog("Launch URL", "Application launched Successfully", Status.DONE);
+		// Sample code to launch URL in the browser
+		driver.get("http://www.seleniumframework.com/Practiceform/");
+		report.updateTestLog("Launch URL", "URL launched successfully", Status.PASS);
+		report.updateTestLog("Launch URL", "URL launched successfully", Status.DONE);
+		report.updateTestLog("Launch URL", "URL launched successfully", Status.PASS);
+
+		// driver.close();
+		// driver.quit();
+
 	}
 
 	
