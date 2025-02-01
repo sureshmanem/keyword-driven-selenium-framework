@@ -23,7 +23,7 @@ import com.cognizant.framework.selenium.SeleniumTestParameters;
 
 public class SeleniumPracticeScenario extends TestConfigurations {
 
-	@Test(dataProvider = "ChromeHeadless", dataProviderClass = TestConfigurations.class)
+	@Test(dataProvider = "Chrome", dataProviderClass = TestConfigurations.class)
 	public void seleniumPracticeTest(SeleniumTestParameters testParameters) {
 
 		testParameters.setCurrentTestDescription("Test for Selenium Practice entry test");
